@@ -25,7 +25,7 @@ const Navbar = ( ) => {
     <div
     className={`${
       open ? 'block' : 'hidden'
-      } flex flex-col space-x-6 absolute top-[50px] w-[400px] bg-white border border-gray-950 py-6 font-semibold`}
+      } flex flex-col space-x-6 absolute top-[50px] w-[400px] bg-white border text-base border-gray-950 py-8 font-semibold`}
     >
           <Link href="/" className="block py-2 px-9 hover:text-gray-500 hover:bg-transparent">
             LADIES

@@ -1,18 +1,24 @@
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
-import { Bag, CaretDown, Globe, Heart, MagnifyingGlass, Minus, User } from '@phosphor-icons/react/dist/ssr'
+import { Bag, CaretDown, Equals, Globe, Heart, MagnifyingGlass, Minus, User } from '@phosphor-icons/react/dist/ssr'
 
 import logo from '@/assets/logo.svg'
+import SideBar from './SideBar'
 const HeaderBar = () => {
+
+  const [open, setOpen] = useState(false)
+
   return (
+    
     <div className='flex items-center justify-between'>
       <div className='flex m-5 gap-10 '>
       <Image src={logo} alt="logo" width={50} height={50} />
-      <button>
+      <button
+      onClick={() => setOpen(!open)}
+      >
         <div className=''>
-        <Minus />
-        <Minus />
+        <Equals size={30} weight='thin' />
         </div>
       </button>
       <Link href="/" className='uppercase font-semibold '>ladies</Link>
@@ -33,7 +39,9 @@ const HeaderBar = () => {
           <CaretDown size={20} />
         </span>
       </div>
+      {open && <SideBar /> }
     </div>
+    
   )
 }
 
