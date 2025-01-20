@@ -10,7 +10,7 @@ const Navbar = ( ) => {
 
   return (
   <>
-  <div className='bg-red-600 flex gap-10 p-3 items-center justify-center z-50'>
+  <div className='bg-red-600 flex gap-10 p-3 items-center justify-center relative z-10'> 
     <h1 className='text-white uppercase text-sm'>happy lunar new year</h1>
     <button 
     className=' focus:outline-none flex items-center gap-3'

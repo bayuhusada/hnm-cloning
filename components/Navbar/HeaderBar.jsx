@@ -40,7 +40,7 @@ const HeaderBar = () => {
       </div>
     </div>
 {open && 
-<div>
+<div className='realative z-20'>
     <div className='fixed top-0 left-0 h-full bg-white text-white p-5 transform transition-transform duration-300 ease-in-out z-10'>
       <div className="flex text-black items-center justify-center gap-8 m-3">
       <button
