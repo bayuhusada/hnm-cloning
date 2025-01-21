@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { baju } from '../../assets/asset'
+import HeroSelect from './HeroSelect'
 
 
 const HeroBarang = () => {
@@ -9,6 +10,7 @@ const HeroBarang = () => {
 
 
   return (
+    <>
     <div className=' relative top-[800px]'>
       <div className='flex justify-between m-11'>
         <h1 className='text-sm uppercase'>New Arrivals</h1>
@@ -24,6 +26,8 @@ const HeroBarang = () => {
       ))}
       </div>
     </div>
+    <HeroSelect />
+    </>
   )
 }
 

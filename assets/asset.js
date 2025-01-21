@@ -12,7 +12,6 @@ import baju_10 from './10.jpg';
 import baju_11 from './11.jpg';
 import baju_12 from './12.jpg';
 
-
 export const baju = [
 {
   id: 1,
@@ -51,3 +50,37 @@ export const baju = [
   id: 12,
   img: baju_12
 }]
+
+
+import collet1 from './selectCollect1.jpg'
+import collet2 from './selectCollect2.jpg'
+import collet3 from './selectCollect3.jpg'
+import collet4 from './selectCollect4.jpg'
+
+
+export const collect = [
+  {
+    id: 1,
+    img: collet1,
+    name:'KNITWEAR',
+    Link:'Explore'
+  }, {
+    id: 2,
+    img: collet2,
+    name:'JEANS',
+    Link:'Explore'
+
+  }, {
+    id: 3,
+    img: collet3,
+    name:'Linggerie',
+    Link:'Explore'
+
+  }, {
+    id: 4,
+    img: collet4,
+    name:'basics',
+    Link:'Explore'
+
+  }
+]
